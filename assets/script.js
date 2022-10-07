@@ -52,6 +52,7 @@ $(document).ready(function(){
     //setup an interval to run this hour updater function every certain amount of time
     var interval = setInterval(hourUpdater, 60000);
     //for each hour, load saved data from local storage
+    $("#hour-8 .description").val(localStorage.getItem("hour-8"));
     $("#hour-9 .description").val(localStorage.getItem("hour-9"));
     $("#hour-10 .description").val(localStorage.getItem("hour-10"));
     $("#hour-11 .description").val(localStorage.getItem("hour-11"));
@@ -61,6 +62,7 @@ $(document).ready(function(){
     $("#hour-15 .description").val(localStorage.getItem("hour-15"));
     $("#hour-16 .description").val(localStorage.getItem("hour-16"));
     $("#hour-17 .description").val(localStorage.getItem("hour-17"));
+    $("#hour-18 .description").val(localStorage.getItem("hour-18"));
     //continue
     //display current day on the page
     $("#currentDay").text(moment().format("dddd, MMMM Do"))
