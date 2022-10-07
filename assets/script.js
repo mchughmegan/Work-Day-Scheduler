@@ -52,6 +52,7 @@ $(document).ready(function(){
     //setup an interval to run this hour updater function every certain amount of time
     var interval = setInterval(hourUpdater, 60000);
     //for each hour, load saved data from local storage
+    $("#hour-7 .description").val(localStorage.getItem("hour-7"));
     $("#hour-8 .description").val(localStorage.getItem("hour-8"));
     $("#hour-9 .description").val(localStorage.getItem("hour-9"));
     $("#hour-10 .description").val(localStorage.getItem("hour-10"));

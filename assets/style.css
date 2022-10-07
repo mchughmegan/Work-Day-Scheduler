@@ -24,6 +24,11 @@ body {
   .description {
     white-space: pre-wrap;
   }
+
+  .show {
+    color:#0A1D3E;
+    font-size: 14px;
+  }
   
   .time-block {
     text-align: center;
@@ -58,7 +63,7 @@ body {
   }
   
   .saveBtn {
-    border-left: 1px solid #0A1D3E;
+    border-left: 1px solid white;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color: #0A1D3E;
