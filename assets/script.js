@@ -21,13 +21,6 @@ $(document).ready(function(){
         var time = $(this).parent().attr("id");
         //save in local storage
         localStorage.setItem(time, value);
-        //show notification when item is saved
-        $(".notification").addClass("show");
-        //eventually put class in css
-        //timeout to remove notification after five seconds
-        setTimeout(function(){
-            $(".notification").removeClass("show");
-        }, 5000)//milliseconds
     });
     //check what hour it is and adjust the styling of the text areas
     function hourUpdater(){
